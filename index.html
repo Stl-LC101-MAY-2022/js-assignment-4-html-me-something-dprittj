@@ -2,12 +2,12 @@
 <html>
    <head>
       <title>The Gallery Wall (LC GA4)</title>
-      <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+      <link rel="stylesheet" type="text/css" href="styles.css" />
    </head>
    <body>
       <header>
-         <h1>The Gallery Wall</h1><!---page headline/name-->
-         <img src="images/htmlNewHeader.jpeg" alt="A cropped close-up of the gallery wall, showing a handful of hung items in a horizontal slice.">
+         <h1 id="mainHeading">The Gallery Wall</h1><!---page headline/name-->
+         <img id="headerFig" src="images/htmlGalleryHeaderResized.jpeg" alt="A cropped close-up of the gallery wall, showing a handful of hung items in a horizontal slice.">
       </header>
       <main>
          <article>
@@ -26,7 +26,7 @@
                      This is the current state of our gallery wall. We hope you like it! Keep reading to learn more about how we put it together and chose the pieces that we did!
                   </p>
                   <figure>
-                     <img src="images/galleryCurrent.jpeg" alt="An apartment wall segment with several various framed art pieces, photos, and other items hung on it in a cluster.">
+                     <img class="galleryPiece" id="galleryCurrent" src="images/galleryCurrent.jpeg" alt="An apartment wall segment with several various framed art pieces, photos, and other items hung on it in a cluster.">
                      <figcaption>
                         Our wall was not to show off any particular piece(s) of art but to be a display of things we love.
                      </figcaption>
@@ -43,11 +43,11 @@
                <a name="Missouri HeartStrings"></a>
                <h2>Missouri HeartStrings</h2>
                <figure>
-                  <img src="images/moHeartStrings.jpeg" alt="String art of colored twine looped around small nails revealing the shape of the state of Missouri, with a heart-shaped hole in the center hangs on the wall.">
+                  <img class="galleryPiece" id="galleryMissouri1" src="images/moHeartStrings.jpeg" alt="String art of colored twine looped around small nails revealing the shape of the state of Missouri, with a heart-shaped hole in the center hangs on the wall.">
                   <figcaption>
                      Fiancee dusted off her artistic talents to make this piece a few years into living together at our first apartment.
                   </figcaption>
-                  <img src="images/Missouri_HeartStrings_CU.jpeg" alt="A close up showing the details of the craftwork.">
+                  <img class="galleryPiece" id="galleryMissouri2" src="images/Missouri_HeartStrings_CU.jpeg" alt="A close up showing the details of the craftwork.">
                   <figcaption>
                      You can see the love and care put into making this piece, and how despite its flaws, we do love Missouri.
                   </figcaption>
@@ -64,7 +64,7 @@
                <a name="Enchantment Under the Sea Dance Poster"></a>
                <h2>The "Enchantment Under the Sea Dance" Poster</h2>
                <figure>
-                  <img src="images/Enchantment_Poster.jpeg" alt="A painted poster with bright, popping font on a dark background, advertising a high school dance.">
+                  <img class="galleryPiece" id="galleryEnchantment" src="images/Enchantment_Poster.jpeg" alt="A painted poster with bright, popping font on a dark background, advertising a high school dance.">
                   <figcaption>
                      <em>'Your kids are gonna love it.'</em>
                   </figcaption>
@@ -83,7 +83,7 @@
                <a name="Threaded Rainbow Hanger"></a>
                <h2>Threaded Rainbow Hanger and My Favorite Murder Crochet Circle</h2>
                <figure>
-                  <img src="images/Rainbow_and_SSDGM.jpeg" alt="At the top, a rainbow made of tightly coiled twine of different colors hangs from a twine lanyard. Below it hangs a crochet circle with embroidered words encircling a copse of evergreen trees that stand over a bloody knife.">
+                  <img class="galleryPiece" id="gallerySmallPieces" src="images/Rainbow_and_SSDGM.jpeg" alt="At the top, a rainbow made of tightly coiled twine of different colors hangs from a twine lanyard. Below it hangs a crochet circle with embroidered words encircling a copse of evergreen trees that stand over a bloody knife.">
                   <figcaption>
                      <em>Stay Sexy, Don't Get Murdered</em>
                   </figcaption>
@@ -102,7 +102,7 @@
                <a name="Forbidden Forest Travel Poster"></a>
                <h2>Forbidden Forest Travel Poster</h2>
                <figure>
-                  <img src="images/galleryBottomCluster.jpeg" alt="A poster depicting a bright silhouette of a unicorn in a dark forest; me and Fiancee beaming together in our St. Louis Cardinals gear and sunglasses; a small marquee with letters spelling Dogtown; a map of Skyrim in minimalist shapes and tones.">
+                  <img class="galleryPiece" id="galleryBottomCorner" src="images/galleryBottomCluster.jpeg" alt="A poster depicting a bright silhouette of a unicorn in a dark forest; me and Fiancee beaming together in our St. Louis Cardinals gear and sunglasses; a small marquee with letters spelling Dogtown; a map of Skyrim in minimalist shapes and tones.">
                   <figcaption>
                      All four of these are places, or moments, I keep in a bottle to endlessly visit and revisit if I could.
                   </figcaption>
@@ -117,7 +117,7 @@
                <a name="Fiancee and Me at the Ballgame"></a>
                <h2>Fiancee and Me at the Ballgame</h2>
                <figure>
-                  <img src="images/tempBallgameCU.jpeg" alt="A close up of the framed photo of me and Fiancee at the baseball game.">
+                  <img class="galleryPiece" id="galleryBaseball" src="images/tempBallgameCU.jpeg" alt="A close up of the framed photo of me and Fiancee at the baseball game.">
                   <figcaption>
                      Whether the Cardinals won or lost, this was indeed a happy day.
                   </figcaption>
@@ -148,7 +148,7 @@
                <a name="Gold Foil Triangles"></a>
                <h2>Gold Foil Triangles</h2>
                <figure>
-                  <img src="images/goldTriangleFoils.jpeg" alt="Two vertically stacked gold foils using small triangle shapes to produce something larger: in the top, an abstract non-repeating pattern of alternating triangles; in the bottom, a heart made up of triangles.">
+                  <img class="galleryPiece" id="galleryTriangles" src="images/goldTriangleFoils.jpeg" alt="Two vertically stacked gold foils using small triangle shapes to produce something larger: in the top, an abstract non-repeating pattern of alternating triangles; in the bottom, a heart made up of triangles.">
                   <figcaption>
                      My photography skills are not on display here; these are very cool irl.
                   </figcaption>
@@ -163,7 +163,7 @@
                <a name="Loufest 2016 Official Poster"></a>
                <h2>Loufest 2016 Official Poster</h2>
                <figure>
-                  <img src="images/loufest.jpeg" alt="A funky, eclectic festival poster with 'Loufest' in big font across the middle, the lineup of bands at the bottom, and icons, symbols, and other small images scattered all around.">
+                  <img class="galleryPiece" id="galleryLoufest" src="images/loufest.jpeg" alt="A funky, eclectic festival poster with 'Loufest' in big font across the middle, the lineup of bands at the bottom, and icons, symbols, and other small images scattered all around.">
                   <figcaption>
                      This annual event is still greatly missed.
                   </figcaption>
@@ -178,7 +178,7 @@
                <a name="Shake It Off"></a>
                <h2>Shake It Off and Flower Print</h2>
                <figure>
-                  <img src="images/flowers_and_Taylor.jpeg" alt="">
+                  <img class="galleryPiece" id="galleryTaylor" src="images/flowers_and_Taylor.jpeg" alt="">
                   <figcaption>
 
                   </figcaption>
@@ -203,7 +203,7 @@
                <a name="Superman"></a>
                <h2>Superman: Mini Mural and Fortress of Solitude Painting</h2>
                <figure>
-                  <img src="images/SupermenAndHobbes.jpeg" alt="">
+                  <img class="galleryPiece" id="gallerySuperman" src="images/SupermenAndHobbes.jpeg" alt="">
                   <figcaption>
 
                   </figcaption>
@@ -222,13 +222,13 @@
                <a name="Calvin and Hobbes"></a>
                <h2>C&H Print</h2>
                <figure>
-                  <img src="images/C&H.jpeg" alt="">
+                  <img class="galleryPiece" id="galleryCalvin" src="images/C&Hresized.jpeg" alt="">
                   <figcaption>
                      Which <em>would</em> be worse?? Idk... Let's go exploring!
                   </figcaption>
                </figure>
             <h3>Calvin nd Hobbes Print</h3>
-            <p>
+            <p class="funParagraph" id="testP">
                Calvin and Hobbes. There's a lot I could say about Bill Watterson's seminal comic strip and yet it would only amount to a fraction of the justice his work deserves. Although it ended nearly 30 years ago its influence is still evident today. Not only does Watterson's art remain uniquely stylistic for a comic medium, but the characters, themes, situations, and witty irreverence towards all things, large and small, keep the series endlessly entertaining, even nearly three decades past its run. I should know, I've loved the series since I was 8 years old and have nearly all of the collections. One day, though!
                <br><br>
                This particular print was purchased for me as a gift from Fiancee. And it couldn't have been more perfect! This piece not only demonstrates Watterson's precise grasp of his craft in its art--from the overlapping panel layout, to the use of negative space to draw the reader in, to the varying backgrounds and degrees of detail--but it wonderfully conveys the oft-present absurdism of his writing: here, while engaging in their favorite pasttime of taking a wagon (or in winter, a sled) down a dangerously steep hill, Calvin cannot help but ponder the point of philosophy, is asking the big questions a productive use of our time? Does anything really matter? In the second panel, we see Calvin completely turned away from their downhill dangers, looking directly at Hobbes in the back of the wagon as he asks his best buddy about these ponderances. And knowing right where to put a punchline, Watterson draws Hobbes covering his eyes in the final panel, as the two fall from some great height, while commenting that maybe sometimes a little faith isn't such a bad idea! 
