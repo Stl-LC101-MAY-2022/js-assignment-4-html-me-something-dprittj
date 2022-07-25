@@ -1,1 +1,53 @@
 /* Write your CSS here! */
+
+header {
+    background-image: url("images/htmlNewHeader.jpeg");
+    background-color: rgb(171, 217, 202);
+    border: solid;
+}
+#mainHeading {
+    color:red;
+    font-size: 64px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    margin-left: 60px;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 8px;
+    display: block;
+}
+figcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.funParagraph {
+    color: green;
+}
+img {
+height: 900px;
+width: auto;
+border-style: groove;
+border-width: 4px;
+}
+section {
+    padding: 30px;
+    border-style: double;
+    margin: 30px;
+}
+#welcome {
+    padding: 20px;
+    border-style: none;
+    margin: 20px;
+}
+#louisville {
+    font-size: 40px;
+}
+#missouri {
+    border: solid, darkblue;
+    background-color: hsl(160, 84%, 83%);
+}
+address:link {
+    color:blue;
+}
