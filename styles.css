@@ -48,3 +48,6 @@ section {
     border: solid, darkblue;
     background-color: hsl(160, 84%, 83%);
 }
+address:link {
+    color:blue;
+}
